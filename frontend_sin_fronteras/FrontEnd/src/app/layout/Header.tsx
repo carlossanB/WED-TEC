@@ -1,7 +1,8 @@
 import { useEffect, useState, useRef } from "react"
 import Link from "@/app/navigation/Link"
 import { useRouter } from "@/app/providers/RouterProvider"
-import logo from "@/assets/icons/logo_sin_fronteras-removebg-preview.png"
+import logoBlue from "@/assets/icons/statue_symbol.png"
+import logoWhite from "@/assets/icons/statue_symbol_white.png"
 import { contact, navigation } from "@/data/navigation"
 import Button from "@/shared/ui/Button"
 import Icon from "@/shared/ui/Icon"
@@ -106,7 +107,10 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
               setMegaMenuOpen(false)
             }}
           >
-            <span className="brand-symbol"><img src={logo} alt="" /></span>
+            <span className="brand-symbol">
+              <img src={logoBlue} alt="Estatua de la Libertad - Servicios Sin Fronteras" className="brand-symbol-light" />
+              <img src={logoWhite} alt="Estatua de la Libertad - Servicios Sin Fronteras" className="brand-symbol-dark" />
+            </span>
             <span className="brand-name">
               <small>SERVICIOS</small>
               <strong>SIN FRONTERAS<span>.</span></strong>

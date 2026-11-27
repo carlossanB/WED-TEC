@@ -594,10 +594,13 @@ h1 span { color: var(--secondary); }
 }
 
 /* Editorial composition and motion refinements. */
-.brand-logo { display: inline-flex; align-items: center; gap: 9px; width: 180px; height: 62px; overflow: visible; }
-.brand-symbol { display: grid; width: 43px; height: 51px; place-items: start center; overflow: hidden; }
-.brand-symbol img { display: block; width: 58px; height: 58px; object-fit: contain; transform: translateY(-2px); }
-[data-theme='dark'] .brand-symbol img { filter: brightness(0) invert(1); }
+.brand-logo { display: inline-flex; align-items: center; gap: 10px; width: auto; height: 52px; overflow: visible; text-decoration: none; }
+.brand-symbol { display: flex; align-items: center; justify-content: center; width: 42px; height: 48px; flex-shrink: 0; }
+.brand-symbol img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.brand-symbol .brand-symbol-dark { display: none; }
+.brand-symbol .brand-symbol-light { display: block; }
+[data-theme='dark'] .brand-symbol .brand-symbol-dark { display: block; }
+[data-theme='dark'] .brand-symbol .brand-symbol-light { display: none; }
 .brand-name { display: flex; flex-direction: column; gap: 3px; line-height: 1; color: var(--heading); }
 .brand-name small { font-family: var(--font-heading); font-size: 8px; font-weight: 700; letter-spacing: 3px; }
 .brand-name strong { font-family: var(--font-heading); font-size: 16px; font-weight: 800; letter-spacing: -.7px; white-space: nowrap; }
@@ -797,9 +800,8 @@ h1 span { color: var(--secondary); }
 }
 
 @media (max-width: 760px) {
-  .brand-logo { width: 152px; height: 56px; gap: 7px; }
-  .brand-symbol { width: 38px; height: 46px; }
-  .brand-symbol img { width: 53px; height: 53px; }
+  .brand-logo { width: auto; height: 48px; gap: 8px; }
+  .brand-symbol { width: 36px; height: 42px; }
   .brand-name small { font-size: 7px; letter-spacing: 2.5px; }
   .brand-name strong { font-size: 14px; }
   .services-showcase-intro { padding-top: 0; }
@@ -901,9 +903,8 @@ h1 span { color: var(--secondary); }
 
 @media (max-width: 340px) {
   .header-inner { gap: 8px; }
-  .brand-logo { width: 152px; min-width: 0; flex: 0 1 152px; gap: 5px; }
-  .brand-symbol { width: 32px; height: 40px; flex: 0 0 32px; }
-  .brand-symbol img { width: 46px; height: 46px; }
+  .brand-logo { width: auto; min-width: 0; gap: 5px; }
+  .brand-symbol { width: 30px; height: 36px; flex: 0 0 30px; }
   .brand-name { min-width: 0; }
   .brand-name small { font-size: 6px; letter-spacing: 2px; }
   .brand-name strong { font-size: 12px; letter-spacing: -.6px; }
