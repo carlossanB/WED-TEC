@@ -1,6 +1,6 @@
 import { useRef } from "react"
 import Link from "@/app/navigation/Link"
-import servicesBanner from "@/assets/images/optimized/banner seccion de servicios.webp"
+import servicesBanner from "@/assets/images/optimized/banner-seccion-servicios.webp"
 import { siteImages } from "@/data/media"
 import Icon from "@/shared/ui/Icon"
 import ResponsiveImage from "@/shared/ui/ResponsiveImage"

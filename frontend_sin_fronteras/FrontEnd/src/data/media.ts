@@ -7,8 +7,8 @@ import documentDesktop from '../assets/images/optimized/document-signing-1200.jp
 import documentMobile from '../assets/images/optimized/document-signing-720.jpg'
 import trustDesktop from '../assets/images/optimized/trust-couple-1000.jpg'
 import trustMobile from '../assets/images/optimized/trust-couple-720.jpg'
-import statueOfLibertyHero from '../assets/images/optimized/Estatua de la Libertad al atardecer.webp'
-import statusFamily from '../assets/images/familia con bandera de estados unidos.webp'
+import statueOfLibertyHero from '../assets/images/optimized/estatua-libertad-atardecer.webp'
+import statusFamily from '../assets/images/familia-bandera-estados-unidos.webp'
 
 export const siteImages = {
   heroStatue: {

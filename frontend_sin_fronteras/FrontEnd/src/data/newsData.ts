@@ -1,5 +1,5 @@
 import documentSigningImg from "@/assets/images/optimized/document-signing-1200.jpg"
-import statueLibertyImg from "@/assets/images/optimized/Estatua de la Libertad al atardecer.webp"
+import statueLibertyImg from "@/assets/images/optimized/estatua-libertad-atardecer.webp"
 import trustCoupleImg from "@/assets/images/optimized/trust-couple-1000.jpg"
 import visaApplicationImg from "@/assets/images/optimized/visa-application-960.jpg"
 import type { NewsArticle, NewsCategory } from "@/features/news/types"
