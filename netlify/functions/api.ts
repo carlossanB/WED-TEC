@@ -1,5 +1,5 @@
 import awsLambdaFastify from "@fastify/aws-lambda";
-import { buildApp } from "../../BackendSinFronteras/src/app.js";
+import { buildApp } from "../../BackendSinFronteras/dist/app.js";
 
 let fastifyApp: any = null;
 let proxyHandler: any = null;

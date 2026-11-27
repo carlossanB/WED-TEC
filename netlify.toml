@@ -3,9 +3,8 @@
 # ==============================================================================
 
 [build]
-  base = "frontend_sin_fronteras/FrontEnd"
-  publish = "dist"
-  command = "pnpm run build"
+  command = "cd BackendSinFronteras && pnpm install && pnpm run build && cd ../netlify/functions && pnpm install && cd ../../frontend_sin_fronteras/FrontEnd && pnpm install && pnpm run build"
+  publish = "frontend_sin_fronteras/FrontEnd/dist"
 
 [functions]
   directory = "netlify/functions"
