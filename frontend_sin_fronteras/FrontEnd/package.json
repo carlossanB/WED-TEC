@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && pnpm --dir ../../BackendSinFronteras install --frozen-lockfile && npm install --prefix netlify/functions --no-audit --no-fund --no-package-lock",
     "preview": "vite preview",
     "format": "oxfmt"
   },
