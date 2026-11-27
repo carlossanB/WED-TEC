@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap');
+@import 'tailwindcss';
+@import './styles/tokens.css';
+@import './styles/globals.css';
+@import './features/services/styles/services.css';
+@import './styles/refinements.css';
+@import './features/case-lookup/styles/case-lookup.css';
+@import './features/consultation/styles/consultation.css';
+@import './features/news/styles/news.css';

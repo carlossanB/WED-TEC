@@ -1,0 +1,10 @@
+{
+  "description": "Connects the Hispanic community in the U.S. with resources and professionals for immigration processes, offering clear guidance and support.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

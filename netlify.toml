@@ -1,0 +1,25 @@
+# ==============================================================================
+# CONFIGURACION NETLIFY MONOREPO — PROYECTO TEC (FRONTEND + FASTIFY FUNCTIONS)
+# ==============================================================================
+
+[build]
+  base = "frontend_sin_fronteras/FrontEnd"
+  publish = "dist"
+  command = "pnpm run build"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# 1. Rutas de la API hacia la función serverless de Fastify
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+  force = true
+
+# 2. Enrutamiento SPA de React (evita errores 404 al recargar)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
